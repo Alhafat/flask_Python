@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>{% block title %} base {% endblock %}</title>
+</head>
+<body>
+
+{% block header %}
+<he><h1>header</h1></he>
+{% endblock %}
+
+{% block menu %}
+<na class = "menu">
+    <ul>
+        <li><a href="{{url_for('index')}}">Главная</a></li>
+        <li><a href="{{url_for('clothes')}}">Одежда</a></li>
+        <li><a href="{{url_for('shoes')}}">Обувь</a></li>
+        <li><a href="{{url_for('jacket')}}">Куртки</a></li>
+    </ul>
+</na>
+{% endblock %}
+
+{% block content %}
+<sec><h1>content</h1></sec>
+{% endblock %}
+
+{% block footer %}
+<sec><h1>footer</h1></sec>
+{% endblock %}
+
+</body>
+</html>
