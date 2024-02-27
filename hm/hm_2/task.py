@@ -9,7 +9,6 @@
 с данными пользователя и произведено перенаправление на страницу ввода имени и электронной почты.
 """
 
-
 from flask import Flask, render_template, request, redirect, url_for, flash, session
 
 app = Flask(__name__)
