@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {{ super() }} - {{title}}
+{% endblock %}
+
+{% block content %}
+    <se>
+        <p>Добро пожаловать на главную страницу!</p>
+       <ul>
+        <a href="{{ url_for('form') }}">Check Out This Form!</a>
+        </ul>
+    </se>
+{% endblock %}

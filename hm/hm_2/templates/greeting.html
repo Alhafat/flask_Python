@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {{ super() }} - {{title}}
+{% endblock %}
+
+{% block content %}
+<style>
+       .positions{
+           display: flex;
+           justify-content: space-around;
+           align-items: center;
+       }
+</style>
+    <se class="positions">
+        <p>Hello {{name}}</p>
+        <output><a href="{{ url_for('form') }}">Выйти</a></output>
+    </se>
+{% endblock %}
