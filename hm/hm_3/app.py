@@ -8,7 +8,7 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = 'mySecretkeY'
 csrf = CSRFProtect(app)
 """
-Генерация надежного секретного ключа
+Генерация надежного секретного ключаuser
 >>> import secrets
 >>> secrets.token_hex()
 """
@@ -38,7 +38,7 @@ def register():
         new_user.set_pass(password)
         db.session.add(new_user)
         db.session.commit()
-        success_msg = 'Registration successful!'
+        success_msg = f'User {firstname} {lastname} registration successful!'
         return success_msg
     return render_template('register.html', form=form)
 
