@@ -25,7 +25,7 @@ import asyncio
 import aiohttp
 
 images = []
-with open('task.txt', 'r') as f:
+with open('url.txt', 'r') as f:
     for image in f.readlines():
         images.append(image.strip())
 
